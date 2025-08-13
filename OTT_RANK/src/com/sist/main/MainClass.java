@@ -8,6 +8,8 @@ public class MainClass {
 		System.out.println("이철우");
 		System.out.println("지은표");
 		System.out.println("김한별");
+		System.out.println("이성현");
+		
 	}
 
 }
