@@ -7,6 +7,7 @@ public class MainClass {
 		System.out.println("서동현");
 		System.out.println("이철우");
 		System.out.println("지은표");
+		System.out.println("김하별");
 	}
 
 }
