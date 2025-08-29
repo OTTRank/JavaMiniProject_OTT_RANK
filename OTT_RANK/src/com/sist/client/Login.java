@@ -1,4 +1,4 @@
-package com.sist.main;
+package com.sist.client;
 import javax.swing.*;
 import java.awt.*;
 
@@ -33,7 +33,7 @@ public class Login extends JFrame {
         pf.setBounds(45, 50, 180, 20);
 
         JPanel p = new JPanel();
-        p.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 0)); // 버튼 간격 줄이기
+        p.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 0)); 
         p.add(b1);
         p.add(b2);
         p.add(b3);
