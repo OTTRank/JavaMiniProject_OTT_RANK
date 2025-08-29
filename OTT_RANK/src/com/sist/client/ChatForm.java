@@ -1,6 +1,9 @@
 package com.sist.client;
+import java.awt.FlowLayout;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextArea;
@@ -41,14 +44,21 @@ public class ChatForm extends JFrame {
 		add(textArea);
 		js1.setBounds(650, 150, 585, 400);
 		add(js1);
-		post.setBounds(770, 560, 150, 30);
-		info.setBounds(960, 560, 150, 30);
+//		post.setBounds(770, 560, 150, 30);
+//		info.setBounds(960, 560, 150, 30);
 		chatField.setBounds(30, 660, 600, 30);
 		add(chatField);
-		add(post);
-		add(info);
+//		add(post);
+//		add(info);
 
+		JPanel p=new JPanel();
+		p.setLayout(new FlowLayout());
+		info.setPreferredSize(new java.awt.Dimension(150, 30));
+		post.setPreferredSize(new java.awt.Dimension(150, 30));
+		p.add(post);p.add(info);
+		p.setBounds(650, 555, 585, 40);
 		
+		add(p);
 		setSize(1280,800);
 		setVisible(true);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
