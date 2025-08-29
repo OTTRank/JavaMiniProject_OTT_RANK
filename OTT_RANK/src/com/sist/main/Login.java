@@ -11,12 +11,12 @@ public class Login extends JFrame {
     public Login() {
        
         setTitle("Login");
-        setSize(250, 200); // 작은 창 사이즈
+        setSize(250, 200); 
         setLayout(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setLocationRelativeTo(null); // 중앙 배치
+        setLocationRelativeTo(null); 
 
-        // 컴포넌트 생성
+        
         la1 = new JLabel("ID", JLabel.CENTER);
         la2 = new JLabel("PW", JLabel.CENTER);
         tf = new JTextField();
@@ -25,7 +25,7 @@ public class Login extends JFrame {
         b2 = new JButton("가입");
         b3 = new JButton("취소");
 
-        // 작고 간결하게 배치
+       
         la1.setBounds(10, 20, 30, 20);
         tf.setBounds(45, 20, 180, 20);
 
@@ -39,7 +39,7 @@ public class Login extends JFrame {
         p.add(b3);
         p.setBounds(10, 85, 215, 30);
 
-        // 컴포넌트 추가
+        
         add(la1);
         add(tf);
         add(la2);
