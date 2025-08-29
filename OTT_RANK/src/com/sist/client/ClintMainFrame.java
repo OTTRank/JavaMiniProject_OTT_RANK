@@ -15,8 +15,8 @@ implements ActionListener
 		setLayout(null);
 		menu.setBounds(135, 80, 1000, 50);
 		menu2.setBounds(135, 15, 1000, 50);
-
-		cp.setBounds(20, 147, 1225, 595);
+		cp.setBounds(20, 147, 1225, 595);		
+		cp.setBounds(20, 150, 1230, 600);
 		add(menu);
 		add(menu2);
 		add(cp);
