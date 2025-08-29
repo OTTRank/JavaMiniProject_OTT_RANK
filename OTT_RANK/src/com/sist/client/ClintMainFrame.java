@@ -16,7 +16,7 @@ implements ActionListener
 		menu.setBounds(135, 80, 1000, 50);
 		menu2.setBounds(135, 15, 1000, 50);
 
-		cp.setBounds(20, 85, 1230, 680);
+		cp.setBounds(20, 147, 1225, 595);
 		add(menu);
 		add(menu2);
 		add(cp);
@@ -26,6 +26,9 @@ implements ActionListener
 		menu.b1.addActionListener(this);
 		menu.b2.addActionListener(this);
 		menu.b3.addActionListener(this);
+		menu.b4.addActionListener(this);
+		
+		menu2.b6.addActionListener(this);
 		
 	}
 	public static void main(String[] args) {
@@ -52,6 +55,14 @@ implements ActionListener
 		else if(e.getSource()==menu.b3)
 		{
 			cp.card.show(cp, "BF");
+		}
+		else if (e.getSource()== menu.b4)
+		{
+	        cp.card.show(cp, "CF");
+	    }
+		else if (e.getSource()== menu2.b6)
+		{
+			new Login().setVisible(true); //로그인은 JFrame라서 일단 이렇게 넣었음
 		}
 	}
 
