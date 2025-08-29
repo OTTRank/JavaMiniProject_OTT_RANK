@@ -1,10 +1,61 @@
 package com.sist.client;
-import javax.swing.*;
-import java.awt.*;
-public class ChatForm extends JPanel{
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+import javax.swing.JTextPane;
+import javax.swing.table.DefaultTableModel;
+public class ChatForm extends JFrame {
+	JButton info,post;
+	JTextArea textArea;
+	JTextField chatField;
+	JTable userList, roomList;
+	DefaultTableModel ULmodel,RLModel;
+	JTextPane pane;
+	
 	public ChatForm()
 	{
-		setBackground(Color.pink);
-	}
+		info=new JButton();
+		post=new JButton();
+		textArea=new JTextArea();
+		chatField=new JTextField();
+		
+		String[] ulmd= {"아이디","이름","성별"};
+		String[][] rlmd= new String[0][3];
+		
+		ULmodel=new DefaultTableModel(rlmd,ulmd) {
 
+			@Override
+			public boolean isCellEditable(int row, int column) {
+				// TODO Auto-generated method stub
+				return false;
+			}
+			
+		};
+		userList=new JTable(ULmodel);
+		JScrollPane js1=new JScrollPane(userList);
+		setLayout(null);
+		textArea.setBounds(30, 150, 600, 500);
+		add(textArea);
+		js1.setBounds(650, 150, 585, 400);
+		add(js1);
+		post.setBounds(770, 560, 150, 30);
+		info.setBounds(960, 560, 150, 30);
+		chatField.setBounds(30, 660, 600, 30);
+		add(chatField);
+		add(post);
+		add(info);
+
+		
+		setSize(1280,800);
+		setVisible(true);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
+	}
+	public static void main(String[] args) {
+		new ChatForm();
+		
+	}
 }
