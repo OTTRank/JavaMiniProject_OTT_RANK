@@ -12,6 +12,7 @@ implements ActionListener
 
 	ControllerPanel cp=new ControllerPanel(); // 내용물 
 
+	
 	// has-a => 포함 클래스 
 	public ClintMainFrame()
 	{

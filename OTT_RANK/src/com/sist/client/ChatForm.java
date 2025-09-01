@@ -46,7 +46,11 @@ public class ChatForm extends JPanel {
 		add(js1);
 //		post.setBounds(770, 560, 150, 30);
 //		info.setBounds(960, 560, 150, 30);
+<<<<<<< HEAD
 		chatField.setBounds(30, 560, 600, 30);
+=======
+		chatField.setBounds(30, 660, 600, 30);
+>>>>>>> branch 'master' of https://github.com/OTTRank/JavaMiniProject_OTT_RANK.git
 		add(chatField);
 //		add(post);
 //		add(info);
