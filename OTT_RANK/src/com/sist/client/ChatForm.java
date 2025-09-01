@@ -47,6 +47,7 @@ public class ChatForm extends JPanel {
 //		post.setBounds(770, 560, 150, 30);
 //		info.setBounds(960, 560, 150, 30);
 		chatField.setBounds(30, 560, 600, 30);
+		chatField.setBounds(30, 660, 600, 30);
 		add(chatField);
 //		add(post);
 //		add(info);
