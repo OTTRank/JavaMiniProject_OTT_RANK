@@ -4,7 +4,7 @@ import javax.swing.border.EmptyBorder;
 
 import java.awt.*;
 
-public class HomeForm extends JPanel{
+public class HomeForm extends JPanel{ //1
 
        // 검색 입력하는 필드
 	JTextField SearchFd;
@@ -13,7 +13,7 @@ public class HomeForm extends JPanel{
        // 탭 기능
        JTabbedPane RankTab;
 
-	public HomeForm(){
+	public HomeForm(){ //2
 
               setLayout(null);// 좌표로 위치를 잡기 위해 null
 
@@ -44,14 +44,15 @@ public class HomeForm extends JPanel{
 
               // 반복문으로 탭들을 보여지게 출력
               String[] Titles = {"넷플릭스","웨이브","디즈니+","왓챠","쿠팡플레이"};
-              for (String OTTName : Titles) {
+              for (String ott : Titles) { //3
 
-                     RankTab.addTab(OTTName, new JPanel(new BorderLayout())); 
-                     
-              }
+                     RankTab.addTab(ott, new JPanel(new BorderLayout())); 
+                     // RankTab.addTab(ott, new HomeFormTabGridPage(ott));  // 분리한 페이지 넣기
+
+              } //3
 
               // 각 탭의 제목 컴포넌트를 커스텀
-              for(int i = 0; i < Titles.length; i++){
+              for(int i = 0; i < Titles.length; i++){ //4
                      String title = RankTab.getTitleAt(i); // 탭의 제목 문자열을 가져옴
 
                      JLabel TabLabel = new JLabel(title); // 탭의 제목 문자열을 JLable에 넣어서 표시가 됨
@@ -59,7 +60,7 @@ public class HomeForm extends JPanel{
                      TabLabel.setBorder(new EmptyBorder(6, 18, 6, 18)); // JLable의 상,좌,하,우 여백
                      RankTab.setTabComponentAt(i, TabLabel);
                      
-              }
+              } //4
               
 
               
@@ -69,5 +70,5 @@ public class HomeForm extends JPanel{
               
               add(p); // 검색 필드, 버튼 추가
               add(RankTab); // 탭 추가
-	}
-}
+	} //2
+} //1
