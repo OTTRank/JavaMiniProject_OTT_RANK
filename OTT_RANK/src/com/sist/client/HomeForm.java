@@ -41,6 +41,7 @@ public class HomeForm extends JPanel{ //1
               // JTabbedPane.WRAP_TAB_LAYOUT => 탭이 여러개이면 줄바꿈 기능
 
               RankTab.setBounds(20, 60, 1190, 680); // 탭의 위치
+              
 
               // 반복문으로 탭들을 보여지게 출력
               String[] Titles = {"넷플릭스","웨이브","디즈니+","왓챠","쿠팡플레이"};

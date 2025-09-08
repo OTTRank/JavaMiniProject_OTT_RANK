@@ -25,6 +25,7 @@ public class HomeFormCardPanel extends JPanel {
 	        subtitleLabel.setFont(new Font("맑은 고딕", Font.PLAIN, 12));
 	        subtitleLabel.setForeground(Color.DARK_GRAY);
 
+	        
 	        // 설명
 	        JTextArea descArea = new JTextArea(item.desc);
 	        descArea.setLineWrap(true);

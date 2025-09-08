@@ -10,6 +10,7 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.JTextPane;
 import javax.swing.table.DefaultTableModel;
+
 public class ChatForm extends JPanel {
 	JButton info,post;
 	JTextArea textArea;

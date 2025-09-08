@@ -9,6 +9,7 @@ public class MenuForm extends JPanel{
 	JButton b4=new JButton("실시간 채팅");
 	
 	public MenuForm()
+	
 	{
 		setLayout(new GridLayout(1,4,5,5));
 		add(b1);add(b2);add(b3);
