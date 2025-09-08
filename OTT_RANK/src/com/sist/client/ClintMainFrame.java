@@ -12,8 +12,12 @@ implements ActionListener
 
 	ControllerPanel cp=new ControllerPanel(); // 내용물 
 
-	
+	  
 	// has-a => 포함 클래스 
+	
+	
+	
+	
 	public ClintMainFrame()
 	{
 		setLayout(null); // 좌표로 위치를 잡기 위해 null
