@@ -59,7 +59,8 @@ public class WrapLayout extends FlowLayout
 
                 if (m.isVisible()) {
                     Dimension d = preferred ? m.getPreferredSize() : m.getMinimumSize();
-
+                    
+                    
                     if (rowWidth + d.width > maxWidth) {
                         addRow(dim, rowWidth, rowHeight);
                         rowWidth = 0;

@@ -17,6 +17,7 @@ public class Login extends JFrame {
         setLocationRelativeTo(null); 
 
         
+        
         la1 = new JLabel("ID", JLabel.CENTER);
         la2 = new JLabel("PW", JLabel.CENTER);
         tf = new JTextField();

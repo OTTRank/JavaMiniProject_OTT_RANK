@@ -16,6 +16,7 @@ public class HomeFormTabGridPage extends JPanel {
         // WrapLayout 사용 (왼쪽 정렬, 간격 15px)
         JPanel gridPanel = new JPanel(new WrapLayout(FlowLayout.LEFT, 15, 15));
 
+        
         // 더미 데이터
         List<HomeFormMediaItem> items = Arrays.asList(
             new HomeFormMediaItem(ott + " 영화 1", "감독 A", "설명 A"),

@@ -12,6 +12,7 @@ public class MenuForm2 extends JPanel{
 	JButton b7=new JButton("마이 페이지");
 	JButton b8=new JButton("회원 관리");
 	
+	
 	public MenuForm2()
 	{
 		setLayout(new GridLayout(1,3,5,5));

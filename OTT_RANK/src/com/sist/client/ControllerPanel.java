@@ -20,5 +20,6 @@ public class ControllerPanel extends JPanel{
 		add("HF",hf);
 		add("CF",cf);
 		add("BF",bf);
+		
 	}
 }

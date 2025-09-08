@@ -31,6 +31,7 @@ implements ActionListener
 		setSize(1280, 800); // ClintMainFrame의 크기 설정 => 내용물을 큰 틀인 ClintMainFrame에 넣고 이것에 대한 크기를 설정
 
 		setVisible(true); // UI 보이기 
+		
 
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 
