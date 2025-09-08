@@ -3,7 +3,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class MenuForm extends JPanel{
-	JButton b1=new JButton("검색");
+	JButton b1=new JButton("홈");
 	JButton b2=new JButton("공지사항");
 	JButton b3=new JButton("Contact US");
 	JButton b4=new JButton("실시간 채팅");

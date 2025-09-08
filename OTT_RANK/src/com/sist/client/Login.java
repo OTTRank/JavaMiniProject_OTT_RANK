@@ -11,9 +11,9 @@ public class Login extends JFrame {
     public Login() {
        
         setTitle("Login");
-        setSize(250, 200); 
+        setSize(253, 175); 
         setLayout(null);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setDefaultCloseOperation(DISPOSE_ON_CLOSE); // EXIT_ON_CLOSE면 로그인 창 닫았을 시 메인창도 같이 꺼짐
         setLocationRelativeTo(null); 
 
         
@@ -26,18 +26,18 @@ public class Login extends JFrame {
         b3 = new JButton("취소");
 
        
-        la1.setBounds(10, 20, 30, 20);
-        tf.setBounds(45, 20, 180, 20);
+        la1.setBounds(10, 18, 40, 25);
+        tf.setBounds(57, 18, 118, 28);
 
-        la2.setBounds(10, 50, 30, 20);
-        pf.setBounds(45, 50, 180, 20);
+        la2.setBounds(14, 51, 40, 25);
+        pf.setBounds(57, 51, 118, 28);
 
         JPanel p = new JPanel();
         p.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 0)); 
         p.add(b1);
         p.add(b2);
         p.add(b3);
-        p.setBounds(10, 85, 215, 30);
+        p.setBounds(15, 93, 205, 30);
 
         
         add(la1);
