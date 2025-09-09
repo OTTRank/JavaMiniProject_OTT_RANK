@@ -60,11 +60,19 @@ implements ActionListener
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
-		if(e.getSource()==b2)
+		if(e.getSource()==b1)
+		{
+			
+		}
+		else if(e.getSource()==b2)
 		{
 			this.setVisible(false);
 			join.setVisible(true);
+		}
+		else if(e.getSource()==b3)
+		{
+			dispose();
+			System.exit(0);
 		}
 	}
 }
