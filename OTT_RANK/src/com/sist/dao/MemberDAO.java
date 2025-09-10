@@ -1,7 +1,13 @@
 package com.sist.dao;
-import java.util.*;
-import java.sql.*;
-import com.sist.vo.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.sist.vo.MemberVO;
+import com.sist.vo.ZipcodeVO;
 public class MemberDAO {
    private Connection conn;
    private PreparedStatement ps;
@@ -82,7 +88,7 @@ public class MemberDAO {
 			   
 			   if(db_pwd.equals(pwd))//로그인 
 			   {
-				   vo.setId(db_id);
+				   vo.setLogin_id(db_id);
 				   vo.setName(name);
 				   vo.setSex(sex);
 				   vo.setMsg("OK");
@@ -271,5 +277,41 @@ public class MemberDAO {
 	   }
    }
    // 옵션 6. ID찾기 / 비밀번호 찾기  
+   
+   
+   public List<MemberVO> memberAlldata()
+	{
+		List<MemberVO> list=new ArrayList<MemberVO>();
+		try
+		{
+			getConnection();
+			String sql="SELECT Id_num,Login_id,Login_pwd,nickname,sex,post,addr1,NVL(addr2,' '),phone,name FROM 회원목록";
+			ps=conn.prepareStatement(sql);
+			ResultSet rs=ps.executeQuery();
+			while(rs.next())
+			{
+				MemberVO vo=new MemberVO();
+				vo.setId_num(rs.getInt(1));
+				vo.setLogin_id(rs.getString(2));
+				vo.setLogin_pwd(rs.getString(3));
+				vo.setNickname(rs.getString(4));
+				vo.setSex(rs.getString(5));
+				vo.setPost(rs.getString(6));
+				vo.setAddr1(rs.getString(7));
+				vo.setAddr2(rs.getString(8));
+				vo.setPhone(rs.getString(9));
+				vo.setName(rs.getString(10));
+				list.add(vo);
+			}
+		}catch(Exception ex)
+		{
+			
+		}
+		finally
+		{
+			disConnection();
+		}
+		return list;
+	}
    
 }
