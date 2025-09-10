@@ -12,9 +12,9 @@ public class MemberVO {
 	private String sex;
 	private String post;
 	private String addr1;
-	private String addr2;
+	private String addr2;	
 	private String phone;
-	private String msg;
 	private String name;
-	
+	private String bandate;
+	private String msg;
 }
