@@ -1,8 +1,11 @@
 package com.sist.client;
 
-import javax.swing.*;
-import java.awt.*; // 배치 => 레이아웃
-import java.awt.event.*; // 이벤트 처리 
+// 이벤트 처리 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+import javax.swing.UIManager;
 
 public class ClintMainFrame extends JFrame
 implements ActionListener
@@ -83,5 +86,9 @@ implements ActionListener
 		{
 			new Login().setVisible(true); //로그인은 JFrame라서 일단 이렇게 넣었음
 		}
+		else if (e.getSource()== menu2.b8)
+		{
+	        cp.card.show(cp, "MMF"); // 회원관리 폼
+	    }
 	}
 }
