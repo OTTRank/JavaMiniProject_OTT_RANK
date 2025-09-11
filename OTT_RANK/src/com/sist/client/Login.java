@@ -25,7 +25,7 @@ implements ActionListener
         tf = new JTextField();
         pf = new JPasswordField();
         b1 = new JButton("로그인");
-        b2 = new JButton("가입");  
+        b2 = new JButton("가입");
         b3 = new JButton("취소");
 
        
@@ -50,29 +50,29 @@ implements ActionListener
         add(p);
         
         b1.addActionListener(this); // 로그인
-    	b2.addActionListener(this); // 회원가입 
-    	b3.addActionListener(this); // 취소
+       b2.addActionListener(this); // 회원가입 
+       b3.addActionListener(this); // 취소
     }
 
     public static void main(String[] args) {
         new Login().setVisible(true);
     }
 
-	@Override
-	public void actionPerformed(ActionEvent e) {
-		if(e.getSource()==b1)
-		{
-			
-		}
-		else if(e.getSource()==b2)
-		{
-			this.setVisible(false);
-			join.setVisible(true);
-		}
-		else if(e.getSource()==b3)
-		{
-			dispose();
-			System.exit(0);
-		}
-	}
+   @Override
+   public void actionPerformed(ActionEvent e) {
+      if(e.getSource()==b1)
+      {
+         dispose();
+      }
+      else if(e.getSource()==b2)
+      {
+         this.setVisible(false);
+         join.setVisible(true);
+      }
+      else if(e.getSource()==b3)
+      {
+         dispose();
+         System.exit(0);
+      }
+   }
 }
