@@ -25,7 +25,7 @@ implements ActionListener
         tf = new JTextField();
         pf = new JPasswordField();
         b1 = new JButton("로그인");
-        b2 = new JButton("가입");
+        b2 = new JButton("가입");  
         b3 = new JButton("취소");
 
        
